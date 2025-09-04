@@ -1,0 +1,15 @@
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+npm run dev
+
+ <script src="https://cdn.tailwindcss.com"></script> <!-- enables Tailwind -->
+
+col-12: forces full width on extra small screens
+
+col-md-4: creates 3 columns on medium screens and larger
+
+g-4: adds spacing between cards (gap)
+
+img-fluid: makes image scale responsively
+
+h-100: ensures cards are equal height in a row
