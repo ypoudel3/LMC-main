@@ -315,8 +315,11 @@ const cleanMessage = (typeof message === "string" ? message : "").trim().toLower
     };
 
     // Check for emergency keywords first
-    if (originalMessage.match(/emergency|urgent|help.*now|danger|abuse|threat/i)) {
-      response.needsHumanEscalation = true;
+    const safeMessage = (typeof originalMessage === "string" ? originalMessage : "").toLowerCase();
+
+  // Check for emergency keywords first
+  if (safeMessage.match(/emergency|urgent|help.*now|danger|abuse|threat/i)) {
+    response.needsHumanEscalation = true;
       const emergencyInfo = this.knowledgeBase.get('emergency_abroad');
       response.content = emergencyInfo.content;
       response.followUp = "This seems urgent. I'm also connecting you with a human advisor.";
