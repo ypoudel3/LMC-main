@@ -80,9 +80,7 @@ export default function Body({ scrollToBody2 }: BodyProps) {
               <li>Home</li>
         <a href="/legal" target="_self">Legal Help</a>
           <a href="/expense" target="_self">Track Expenses</a>
-
-              <li>Report Abuse</li>
-            </ul>
+          <a href="/reportform" target="_self">Report Abuse</a>            </ul>
           </div>
 
           <div className="text-white">

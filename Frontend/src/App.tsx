@@ -7,6 +7,7 @@ import SOS from '../component/SOS.jsx';
 import Footer from '../component/Footer.jsx';
 import Legal from "../component/Legal";
 import Expense from "../component/Expense.jsx";
+import ReportForm from "../component/ReportForm.jsx"; // no .js
 
 function App() {
   // Get the current URL path
@@ -15,6 +16,7 @@ function App() {
   // If path is "/legal", render Legal.jsx as a separate page
   if (path === "/legal") return <Legal />;
   if (path === "/expense") return <Expense />;
+  if (path === "/reportform") return <ReportForm />;
 
   // Otherwise, render the normal homepage layout
   const body2Ref = useRef<HTMLDivElement>(null);
