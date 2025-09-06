@@ -515,13 +515,13 @@ I can assist you with:
             <div>L-MCM</div>
           </div>
 
+
           <div className="flex justify-center">
             <ul className="flex gap-6 text-white">
-              <li>Home</li>
+        <a href="/app" target="_self">Home</a>
         <a href="/legal" target="_self">Legal Help</a>
-              <li>Track Expenses</li>
-              <li>Report Abuse</li>
-            </ul>
+          <a href="/expense" target="_self">Track Expenses</a>
+          <a href="/reportform" target="_self">Report Abuse</a>            </ul>
           </div>
 
           <div className="text-white">
@@ -531,6 +531,13 @@ I can assist you with:
             ></i>
           </div>
         </div>
+          <div className="text-white">
+            <i
+              className="fa-regular fa-user cursor-pointer"
+              onClick={() => setIsOpen(true)}
+            ></i>
+          </div>
+        
 
       {/* Header */}
       <div className="bg-white shadow-lg border-b-4 border-red-500">

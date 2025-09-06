@@ -78,7 +78,7 @@ export default function Body({ scrollToBody2 }: BodyProps) {
 
           <div className="flex justify-center">
             <ul className="flex gap-6 text-white">
-              <li>Home</li>
+        <a href="/app" target="_self">Home</a>
         <a href="/legal" target="_self">Legal Help</a>
           <a href="/expense" target="_self">Track Expenses</a>
           <a href="/reportform" target="_self">Report Abuse</a>            </ul>
