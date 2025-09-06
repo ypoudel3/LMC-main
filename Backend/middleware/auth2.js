@@ -1,5 +1,5 @@
 import jwt from "jsonwebtoken";
-import Admin from "./models/Admin.js";
+import Admin from "../models/Admin.js";
 const requireAdmin = async (req, res, next) => {
   try {
     const token = req.header('Authorization')?.replace('Bearer ', '');

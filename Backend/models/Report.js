@@ -11,6 +11,6 @@ const reportSchema = new mongoose.Schema({
   createdAt: { type: Date, default: Date.now },
 });
 
-const Report = mongoose.model("Report", reportSchema);
+const Report = mongoose.model("Report", reportSchema);//db file for storage
 
 export default Report;

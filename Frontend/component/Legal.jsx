@@ -1,5 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Send, MessageCircle, User, Bot, Globe, FileText, Shield, Phone, ThumbsUp, ThumbsDown, AlertTriangle, Brain } from 'lucide-react';
+import '../src/App.css'
 
 const Legal = () => {
   const [messages, setMessages] = useState([]);
@@ -375,7 +376,7 @@ I can assist you with:
     setMessages([{
       id: 1,
       sender: 'bot',
-      message: "नमस्ते! Welcome to Nepal Foreign Employment Legal Assistant। म तपाईंको वैदेशिक रोजगारी र कानुनी सहायताका लागि यहाँ छु।\n\nI use advanced AI to understand your questions and provide personalized legal guidance for:\n• Visa requirements and procedures\n• Legal documentation and attestation\n• Worker rights and contracts\n• Recruitment agency verification\n• Country-specific information\n• Cost breakdown and fees\n\n🧠 **Smart Features:** I can understand context, detect your intent, and provide follow-up suggestions based on your specific needs.\n\nPlease ask me anything about foreign employment!",
+      message: "नमस्ते! Welcome to Nepal Foreign Employment Legal Assistant। म तपाईंको वैदेशिक रोजगारी र कानुनी सहायताका लागि यहाँ छु।\n\nI provide personalized legal guidance for:\n• Visa requirements and procedures\n• Legal documentation and attestation\n• Worker rights and contracts\n• Recruitment agency verification\n• Country-specific information\n• Cost breakdown and fees\n\n🧠 **Smart Features:** I can understand context, detect your intent, and provide follow-up suggestions based on your specific needs.\n\nPlease ask me anything about foreign employment!",
       timestamp: new Date(),
       category: 'greeting',
       confidence: 1.0,

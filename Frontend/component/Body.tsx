@@ -75,6 +75,7 @@ export default function Body({ scrollToBody2 }: BodyProps) {
             <div>L-MCM</div>
           </div>
 
+
           <div className="flex justify-center">
             <ul className="flex gap-6 text-white">
               <li>Home</li>
