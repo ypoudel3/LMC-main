@@ -1,42 +1,33 @@
 export default function Footer() {
   return (
     <div className="bg-black/80 text-white">
-      <div className="pt-3 px-7 md:pl-20 pb-7 grid grid-cols-1 md:grid-cols-4 gap-8 items-start">
-        
-        {/* Logo & Description */}
-        <div>
-          <div className="text-3xl font-bold">LMC</div>
-          <div className="mt-2">
-            Empowering Migrant Workers with <br />Safety, Support, and Security
+      <div className="px-24">
+      <div className="pt-3 pb-7 flex flex-row justify-between items-start ">
+      
+        {/* Support */}
+        <div className="flex flex-col">
+          <span className="font-semibold mb-2 ">Quick Access</span>
+          <a href="">Send SOS</a>
+          <a href="">Legal Help</a>
+          <a href="">Track Expenses</a>
+          <a href="">Report Abuse</a>
+        </div>
+{/* Logo & Description */}
+        <div className="flex flex-col items-center justify-center">
+          <div className="text-3xl font-bold">L-MCM</div>
+          <div className="pt-3">
+            <i>Empowering Migrant Workers With Safety, Support and Security</i>
           </div>
-          <div className="flex flex-row gap-2 pt-6">
+          <div className="flex flex-row gap-2 pt-3">
             <i className="fa-brands fa-square-facebook rounded-xl border-white"></i>
             <i className="fa-brands fa-square-instagram"></i>
             <i className="fa-brands fa-square-x-twitter"></i>
             <i className="fa-brands fa-square-youtube"></i>
           </div>
         </div>
-
-        {/* Links */}
-        <div className="flex flex-col">
-          <span className="font-semibold mb-2">Links</span>
-          <a href="">Home</a>
-          <a href="">How It Works</a>
-          <a href="">Legal Help</a>
-          <a href="">About Us</a>
-        </div>
-
-        {/* Support */}
-        <div className="flex flex-col">
-          <span className="font-semibold mb-2">Quick Access</span>
-          <a href="">Send SOS</a>
-          <a href="">Legal Help</a>
-          <a href="">Track Expenses</a>
-          <a href="">Report Abuse</a>
-        </div>
-
+        
         {/* Contacts */}
-        <div className="flex flex-col">
+        <div className="flex flex-col ">
           <span className="font-semibold mb-2">Contacts</span>
           <p>123 Example Road</p>
           <p>Kathmandu, Nepal</p>
@@ -44,6 +35,12 @@ export default function Footer() {
           <p>+977 9863249457</p>
         </div>
 
+      </div>
+      <div className=" border-t pb-2"> 
+      </div>
+      <div className="py-3 text-center text-sm text-gray-400">
+       Copyright © {new Date().getFullYear()} L-MCM. All Rights Preserved.
+      </div>
       </div>
     </div>
   );

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { Send, MessageCircle, User, Bot, Globe, FileText, Shield, Phone, ThumbsUp, ThumbsDown, AlertTriangle, Brain } from 'lucide-react';
 import '../src/App.css'
+import Footer from './Footer.jsx';
 
 const Legal = () => {
   const [messages, setMessages] = useState([]);
@@ -765,7 +766,7 @@ I can assist you with:
     
         </div>
       </div>
-    
+    <Footer />
     </>
   );
 };

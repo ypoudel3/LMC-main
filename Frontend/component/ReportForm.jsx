@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import Footer from './Footer.jsx';
 
 const categories = [
   "Wage Theft",
@@ -132,7 +133,8 @@ export default function ReportForm() {
           </div>
 
       {/* Form Container */}
-      <div className="mt-24 max-w-xl mx-auto p-6 border border-gray-300 rounded-lg bg-white shadow-md">
+    <div className="min-h-screen mt-10 bg-gray-50 py-8">
+      <div className="mt-2 mb-2 max-w-xl mx-auto p-6 border border-gray-300 rounded-lg bg-white shadow-md">
         <h2 className="text-2xl font-semibold mb-6 text-gray-800">
           Flag Unsafe Employers / Frauds Anonymously
         </h2>
@@ -228,6 +230,8 @@ export default function ReportForm() {
 
         {status && <p className="mt-4 text-gray-800">{status}</p>}
       </div>
+      </div>
+      <Footer />
     </>
   );
 }

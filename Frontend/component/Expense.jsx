@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { PlusCircle, DollarSign, TrendingUp, TrendingDown, Trash2, Edit3 } from 'lucide-react';
+import Footer from './Footer.jsx';
 
 const API_BASE_URL = 'http://localhost:5001/api';
 
@@ -394,6 +395,7 @@ const Expense = () => {
         </div>
       </div>
     </div>
+    <Footer />
   </>
   );
 };
