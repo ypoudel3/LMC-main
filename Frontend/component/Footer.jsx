@@ -1,6 +1,6 @@
 export default function Footer() {
   return (
-    <div className="bg-black/80 text-white">
+    <div className="bg-black text-white">
       <div className="px-24">
       <div className="pt-3 pb-7 flex flex-row justify-between items-start ">
       
