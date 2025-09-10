@@ -6,8 +6,8 @@ import http from "http";
 import { Server as SocketIO } from "socket.io";
 import connectDB from "./config/db.js";
 import authRoutes from "./routes/auth.js";
-import sosRoutes from "./routes/sos.js";
-import expenseRouter from "./expense.js";
+import sosRoute from "./routes/sos.js";
+import expenseRouter from "./routes/expenseRoutes.js";
 import { errorHandler } from "./middleware/errorHandler.js";
 import { logger } from "./middleware/logger.js";
 import reportRoutes from "./routes/reports.js"; // our new route
@@ -42,7 +42,7 @@ app.use(express.static(path.join(__dirname, "../Frontend/dist")));
 
 // Routes
 app.use("/api/auth", authRoutes);
-app.use("/api", sosRoutes);
+app.use("/api", sosRoute);
 app.use("/api", expenseRouter);
 app.use("/api/reports", reportRoutes);
 app.use("/api/chat", chatRoutes);

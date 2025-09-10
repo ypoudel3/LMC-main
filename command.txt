@@ -1,0 +1,22 @@
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+
+npm run dev
+
+ <script src="https://cdn.tailwindcss.com"></script> <!-- enables Tailwind -->
+
+$ git remote set-url origin https://github.com/ypoudel3/LMC.git
+
+npm run build
+Use this to upodate the changes made in frontend in the backend
+
+$Env:Path += ";C:\Users\user\Downloads\mongosh-2.5.6-win32-x64\mongosh-2.5.6-win32-x64\bin"
+mongosh "mongodb://localhost:27017"
+-> use this for mongodb test
+
+npm install express mongoose cors
+Mongodb dependencies installation
+
+mongosh
+use sosDB
+db.soses.find().pretty()
+use this ti previe mongoose json

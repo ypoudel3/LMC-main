@@ -3,14 +3,16 @@ import User from "../models/User.js";
 export const sendSOS = async (req, res) => {
   try {
     const { message, location } = req.body;
-    const user = await User.findById(req.userId);
+
+    // req.user is already fetched in auth middleware
+    if (!req.user) return res.status(401).json({ error: "User not authenticated" });
 
     console.log("🚨 SOS Alert Received:", {
       message,
       user: {
-        id: user._id,
-        username: user.username,
-        email: user.email,
+        id: req.user._id,
+        username: req.user.username,
+        email: req.user.email,
       },
       location,
     });
@@ -20,3 +22,4 @@ export const sendSOS = async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 };
+

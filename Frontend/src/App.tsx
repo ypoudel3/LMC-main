@@ -1,44 +1,38 @@
-import './input.css';
 import './App.css';
-import { useRef } from 'react';
-import Body from '../component/Body.tsx';
-import Body2 from '../component/Body2.jsx';
-import SOS from '../component/SOS.jsx';
-import Footer from '../component/Footer.jsx';
+import './input.css';
+import { useRef } from "react";
+import Body from "../component/Body";
+import Body2 from "../component/Body2";
+import SOS from "../component/SOS";
+import Footer from "../component/Footer";
 import Legal from "../component/Legal";
-import Expense from "../component/Expense.jsx";
-import ReportForm from "../component/ReportForm.jsx"; // no .js
-
+import Expense from "../component/Expense";
+import ReportForm from "../component/ReportForm";
 function App() {
-  // Get the current URL path
-  const path = window.location.pathname;
+  const path = window.location.pathname; // define path
 
-  // If path is "/legal", render Legal.jsx as a separate page
+  // Render specific pages based on path
   if (path === "/legal") return <Legal />;
   if (path === "/expense") return <Expense />;
   if (path === "/reportform") return <ReportForm />;
 
-  // Otherwise, render the normal homepage layout
+  // Refs for scrolling
   const body2Ref = useRef<HTMLDivElement>(null);
   const scrollToBody2 = () => {
-    body2Ref.current?.scrollIntoView({ behavior: 'smooth' });
+    body2Ref.current?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
-    <>
-      {/* Main Body */}
+    <>    
       <Body scrollToBody2={scrollToBody2} />
 
-      {/* Section to scroll to */}
       <div ref={body2Ref}>
         <Body2 />
       </div>
 
-      {/* SOS Button Section */}
       <SOS />
-
-      {/* Footer */}
       <Footer />
+
     </>
   );
 }
