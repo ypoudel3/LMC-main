@@ -1,5 +1,4 @@
 // Body.tsx
-import React from "react";
 import Navbar from "./Navbar";
 
 type BodyProps = {
@@ -12,13 +11,13 @@ export default function Body({ scrollToBody2 }: BodyProps) {
       <Navbar /> {/* No token props needed */}
 
       {/* Hero Section */}
-      <div className="relative w-full h-screen">
+      <div className="relative w-full h-screen ">
         <img
           src="b1.jpg"
           alt="Background"
           className="w-full h-full object-cover brightness-50"
         />
-        <div className="absolute inset-0 flex flex-col items-start justify-center text-left text-white px-4 pt-16">
+        <div className="absolute inset-0 flex flex-col items-start justify-center text-left text-white px-4 md:pt-16">
           <div className="px-7 md:px-20">
             <div className="text-4xl md:text-5xl font-bold">Support & Safety for</div>
             <div className="text-4xl md:text-5xl font-bold mt-2">Nepali Migrant Workers</div>

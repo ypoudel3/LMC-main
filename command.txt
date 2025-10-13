@@ -20,3 +20,13 @@ mongosh
 use sosDB
 db.soses.find().pretty()
 use this ti previe mongoose json
+
+ npm create vite@latest
+react setup
+
+npm install -D tailwindcss postcss autoprefixer
+npx tailwindcss init -p
+tailwind setup
+
+Remove-Item -Recurse -Force frontend
+delete 
