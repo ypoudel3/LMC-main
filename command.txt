@@ -30,3 +30,5 @@ tailwind setup
 
 Remove-Item -Recurse -Force frontend
 delete 
+
+7knF0Ok0IHOz
