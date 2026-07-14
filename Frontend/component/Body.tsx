@@ -17,7 +17,7 @@ export default function Body({ scrollToBody2 }: BodyProps) {
           alt="Background"
           className="w-full h-full object-cover brightness-50"
         />
-        <div className="absolute inset-0 flex flex-col items-start justify-center text-left text-white px-4 md:pt-16">
+        <div className="absolute inset-0 flex flex-col items-start justify-center text-left text-black px-4 md:pt-16">
           <div className="px-7 md:px-20">
             <div className="text-4xl md:text-5xl font-bold">Support & Safety for</div>
             <div className="text-4xl md:text-5xl font-bold mt-2">Nepali Migrant Workers</div>
